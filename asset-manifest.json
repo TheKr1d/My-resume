@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-resume/static/css/main.dd148fd5.css",
-    "main.js": "/my-resume/static/js/main.08ecd07f.js",
+    "main.css": "/my-resume/static/css/main.f00d4e47.css",
+    "main.js": "/my-resume/static/js/main.034c53f7.js",
     "static/media/layer-base.png": "/my-resume/static/media/layer-base.2fa5e0698bd8c39d9367.png",
     "static/media/layer-front.png": "/my-resume/static/media/layer-front.df0d9ca18937e07f91a5.png",
     "static/media/layer-middle.png": "/my-resume/static/media/layer-middle.4e89d11a7015bd1a4216.png",
@@ -10,11 +10,11 @@
     "static/media/raleway-regular.woff2": "/my-resume/static/media/raleway-regular.ac6d55fb99dbe0ca591e.woff2",
     "static/media/raleway-black.woff2": "/my-resume/static/media/raleway-black.29ecbb2e11ee94003b30.woff2",
     "index.html": "/my-resume/index.html",
-    "main.dd148fd5.css.map": "/my-resume/static/css/main.dd148fd5.css.map",
-    "main.08ecd07f.js.map": "/my-resume/static/js/main.08ecd07f.js.map"
+    "main.f00d4e47.css.map": "/my-resume/static/css/main.f00d4e47.css.map",
+    "main.034c53f7.js.map": "/my-resume/static/js/main.034c53f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd148fd5.css",
-    "static/js/main.08ecd07f.js"
+    "static/css/main.f00d4e47.css",
+    "static/js/main.034c53f7.js"
   ]
 }
