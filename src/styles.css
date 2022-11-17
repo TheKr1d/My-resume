@@ -6,6 +6,7 @@
 :root {
     --index: calc(1vw + 1vh);
     --text-color: #e7e7e0;
+    --transition: transform .75s cubic-bezier(.075, .5, 0, 1);
 }
 @font-face {
     font-family: raleway-f;
@@ -15,11 +16,12 @@
     font-family: raleway-f;
     src: url(./fonts/raleway-black.woff2);
     font-weight: 900;
-    line-height: 1.55;
 }
+
 body {
     background-color: #010101;
     font-family: raleway-f, sans-serif;
+    line-height: 1.55;
 }
 .main-header {
     position: relative;
@@ -53,10 +55,11 @@ body {
     background-position: center;
     will-change: transform;
     z-index: 2;
+    transition: var(--transition);
 }
 
 .layers-base {
-    transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+    transform: translate3d(0, calc(var(--scrollTop) / 1.8), 0);
     z-index: 0;
 }
 .layers-middle {
@@ -68,29 +71,30 @@ body {
 
 .leyar-header {
     z-index: 1;
-    transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+    transform: translate3d(0, calc(var(--scrollTop) / 3), 0);
+    transition: var(--transition);
+    margin-top: calc(var(--index) * -5);
     will-change: transform;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 600;
     color: var(--text-color);
     text-shadow: 0 0 15px #8D6D29;
 }
 
 .layers-title {
-    font-size: calc(var(--index) * 2.5);
+    font-size: calc(var(--index) * 2.65);
     letter-spacing: calc(var(--index) / 2.25);
+    margin-top: calc(var(--index) / 10.25);
 }
 .layers-caption {
     font-size: calc(var(--index) / 1.175);
     letter-spacing: calc(var(--index) / 3.5);
-    margin-top: calc(var(--index) * -0.75);
 }
 
 .main-article {
     --main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
     min-height: 100vh;
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     color: var(--text-color);
     display: flex;
@@ -98,6 +102,8 @@ body {
     align-items: center;
     position: relative;
     text-align: center;
+    top: -1px;
+    z-index: 10;
 }
 
 .main-article-header {
@@ -105,21 +111,33 @@ body {
     font-size: calc(var(--index) * 1.8);
     letter-spacing: calc(var(--index) / 7.5);
     transform: var(--main-article-transform);
+    transition: var(--transition);
     will-change: transform;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .main-article-paragraph {
     max-width: calc(var(--index) * 30);
     font-size: calc(var(--index) * .9);
-    margin-top: calc(var(--index) * .9);
+    margin-top: calc(var(--index) * 1.25);
     transform: var(--main-article-transform);
+    transition: var(--transition);
+    display: flex;
+    letter-spacing: calc(var(--index) * .1);
+    will-change: transform;
+}
+.main-article-title {
+    font-weight: 600;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+.content {
     will-change: transform;
 }
 .copy {
     position: absolute;
     bottom: calc(var(--index) * 2.5);
-    opacity: 0.45;
+    opacity: .45;
     font-size: calc(var(--index) * .75);
     letter-spacing: calc(var(--index) / 37.5);
 }
