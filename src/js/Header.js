@@ -10,8 +10,10 @@ export default class Header extends React.Component {
             <header className='main-header'>
                 <div className='layers'>
                     <div className='leyar-header'>
-                        <div className='layers-caption'>Резюме</div>
-                        <div className='layers-title'>Обо мне</div>
+                        <div className='layers-caption'>My name is</div>
+                        <div className='layers-title'>Vlad</div>
+                        <div className='layers-caption'>I am looking for a job</div>
+                        <div className='layers-caption'>"Frontend-Developer"</div>
                     </div>
                     <div className='layer layers-base' style={{backgroundImage: `url(${layerBase})`}}></div>
                     <div className='layer layers-middle'style={{backgroundImage: `url(${layerMiddle})`}}></div>
