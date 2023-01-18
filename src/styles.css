@@ -73,7 +73,7 @@ body {
     z-index: 1;
     transform: translate3d(0, calc(var(--scrollTop) / 3), 0);
     transition: var(--transition);
-    margin-top: calc(var(--index) * -5);
+    margin-top: calc(var(--index) * -10);
     will-change: transform;
     text-transform: uppercase;
     font-weight: 600;
@@ -84,7 +84,6 @@ body {
 .layers-title {
     font-size: calc(var(--index) * 2.65);
     letter-spacing: calc(var(--index) / 2.25);
-    margin-top: calc(var(--index) / 10.25);
 }
 .layers-caption {
     font-size: calc(var(--index) / 1.175);
@@ -114,6 +113,8 @@ body {
     transition: var(--transition);
     will-change: transform;
     font-weight: 700;
+    color: #729c9f;
+    text-shadow: 0 0 15px #8dadae;
 }
 
 .main-article-paragraph {
@@ -130,6 +131,8 @@ body {
     font-weight: 600;
     margin-left: 100px;
     margin-right: 50px;
+    color: #c4cdac;
+    text-shadow: #8D6D29;
 }
 .content {
     will-change: transform;
